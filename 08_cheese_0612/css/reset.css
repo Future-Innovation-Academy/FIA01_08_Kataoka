@@ -1,0 +1,511 @@
+@charset "UTF-8";
+html{
+    font-size:62.5%; 
+}
+
+body {
+    font-size:1.6rem;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    color: #333333;
+    line-height: 1;
+    
+}
+img{
+    
+    /* 画像の横幅が画面全体の大きさよりも大きくなることがない */
+    max-width: 100%;
+    width:auto;    
+    /* 横幅より大きくなることはない */
+    height:auto;
+
+}
+
+.text-center{
+    text-align: center;
+}
+
+/* headerの定義 */
+.header-image{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 21px;
+    /* アイコン的な画像とチーズのトップ画との間50pxの定義 */
+    margin: 50px 100px 50px 200px;
+
+}
+.nav-list{
+    /* ヘッダの目次を横並びにする */
+    display: flex;
+    list-style: none;
+}
+.nav-item{
+    /* ヘッダの目次間を50pxに保つ */
+    margin: 0 0 0 50px;
+}
+.nav-item>a{
+    /* ヘッダの目次の文字の色の定義 */
+    color: #333333;
+}
+/* チーズのトップ画像 */
+.top-image{
+    /* absoluteに対して従属する */
+    position:relative;
+    /* 画面サイズに縦横比率を合わせる */
+    width :auto;
+    height:auto;
+    /* この画像では敢て定義せず。
+    ヘッダ画像とAboutのdivのmarginで定義する */
+    margin: 0 0 0 0;
+    text-align: center;
+}
+.top-image__text1{
+    /* relativeに対してdiv単位で作用する */
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    color: #fff;
+    font-size: 4.0rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.top-image__text2{
+    /* relativeに対してdiv単位で作用する */
+    position: absolute;
+    /* 被らないように位置を定義する */
+    bottom: 170px;
+    left: 50%;
+    transform: translate3d(-50%,-50%,0);
+    color: #fff;
+    font-size: 3.0rem;
+    letter-spacing: 0.1rem;
+}
+/* ---------
+    common
+   --------- */
+.site-construct{
+    text-align:center ;
+    line-height: 2;
+    margin: 60px 100px 100px 80px;
+}
+/* ---------
+    about
+   --------- */
+.site-construct-about{
+    text-align:center ;
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    margin: 60px 100px 60px 200px;
+}
+
+.site-title-pattern1{
+    color: #ffd61a;
+    font-size: 24px;
+}
+.site-title-pattern2{
+    color: #222222;
+    font-size: 24px;
+    padding: 60px 0px 0px 0px;
+    text-align:center ;
+}
+
+.profile__list{
+    display: flex;
+    justify-content: center;
+    list-style:none
+
+}
+.profile__item{
+    width: auto;
+}
+
+.profile__eyecatch{
+    /* ※画像同士の余白はなくしたい */
+    padding:80px 0 0 0;
+}
+
+/* ---------
+    course
+   --------- */
+.site-construct-course{
+    text-align:center ;
+    line-height: 2;
+    /* aboutとnews-divの余白を定義する */
+    margin: 60px 100px 60px 200px;
+    list-style:none
+
+}
+.course__list{
+    align-items: center;
+    list-style:none
+
+}
+.course__item{
+    align-items: center;
+
+    display:flex;
+    justify-content: center;
+    list-style:none;
+
+    width:auto;
+    
+}
+
+.course__eyecatch{
+    margin: 60px 100px 60px 200px;
+    text-align:center ;
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+}
+
+
+
+
+.site-construct-course-includes{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    text-align:center ;
+    background-color: #fafafa;
+    display: flex;  
+    justify-content: center;
+    font-size: 1.6rem;
+    list-style:none;
+    vertical-align: middle;
+
+}
+.site-construct-course-include1{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    text-align:left ;
+    background-color: #fafafa;
+    display: inline-block;
+    list-style:none;
+    padding:0 0 0 0;
+    vertical-align: middle;
+}
+
+.site-construct-course-include2{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    text-align:left ;
+    background-color: #fafafa;
+    display: inline-block;
+    list-style:none;
+    padding:0 0 0 0;
+    vertical-align: middle;
+
+}
+.six-divsioin{
+    width: 700px;
+    height: 500px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+
+}
+.six-divsioin img{
+    width: auto;
+    height: 500px;
+
+    object-fit: cover;
+}
+.tile-text1-title{
+    margin: 0 0 0 0;
+    padding:110px 50px 0px 200px ;
+}
+.tile-text1-content{
+    margin: 0 0 0 0;
+    padding:0px 50px 120px 200px ;
+
+}
+.tile-text2-title{
+    margin: 0 0 0 0;
+    padding:120px 0px 0px 50px ;
+
+}
+.tile-text2-content{
+    margin: 0 0 0 0;
+    padding:0px 0px 120px 50px ;
+
+}
+
+.tile-text3-title{
+    margin: 0 0 0 0;
+    padding:120px 0px 0px 50px ;
+
+}
+.tile-text3-content{
+    padding:0px 0px 120px 50px ;
+    margin: 0 0 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------
+    news
+   --------- */
+ .site-construct-news{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    margin: 60px 100px 60px 200px;
+    text-align:center ;
+
+}
+.section{
+    text-align:right ;
+ 
+}
+ .news__list{
+    display: flex;
+    justify-content: center;
+    list-style:none
+
+}
+.news__item{
+    width:300px;
+    padding: 60px 30px 30px 0;
+    text-align:center ;
+
+}
+
+.news__eyecatch{
+    align-items: center;
+
+}
+.news__eyecatch-text1{
+    text-align:left ;
+    font-size: 1.4rem;
+
+}
+/* ---------
+    Access
+   --------- */
+.site-construct-access{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    margin: 60px 100px 0px 200px;
+    text-align:center ;
+    background-color: #fafafa;
+
+}
+.corporation{
+    padding: 0px 0px 60px 0px;
+
+}
+
+
+
+.site-construct-access-includes{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    margin: 60px 0px 60px 0px;
+    text-align:center ;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+.site-construct-access-include1{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    text-align:center ;
+    background-color: #fafafa;
+    display:   block;
+
+}
+
+.site-construct-access-include2{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    text-align:center ;
+    background-color: #fafafa;
+    display:   block;
+    margin: 0 0 0 30px;
+    
+}
+
+
+.site-construct-access-include1 ul {
+	padding-left: 0;
+	list-style: none;
+	display: inline-block;
+}
+.site-construct-access-include1 ul li {
+	text-align: left;
+}
+
+.site-construct-access-include2 ul {
+	padding-left: 0;
+	list-style: none;
+	display: inline-block;
+
+}
+.site-construct-access-include2 ul li {
+	text-align: left;
+}
+
+
+.site-construct-access-include1 ul {
+	padding-left: 0;
+	list-style: none;
+	display: inline-block;
+}
+.site-construct-access-include1 ul li {
+	text-align: left;
+}
+
+
+/* ---------
+    CONTACT
+   --------- */
+.contact-section{
+    margin:0 0 140px 0;
+}
+.site-construct-contact{
+    line-height: 2;
+    /* TOP画像とCOURSE-divの余白を定義する */
+    margin: 60px 100px 70px 200px;
+    text-align:center ;
+}
+.contact-table{
+    margin: auto;
+    border-top: 1px solid #9e9999;
+
+    /* 
+    border-collapse:collapse;
+    border: 1px solid #9e9999;
+    border-right: none;
+    border-left: none;    
+ */
+
+    /* border: 1px solid #9e9999; */
+    width: 640px;
+    margin-bottom:30px;
+}
+.contact-item {
+    border-right: 1px solid #9e9999;
+    border-bottom: 1px solid #9e9999;
+    border-collapse:collapse;
+    text-align: left;
+    width: 240px;
+
+    /* width: 240px; */
+    padding: 0px 64px 0px 16px;
+    line-height: 2;
+
+
+}
+
+.contact-body {
+
+    border-bottom: 1px solid #9e9999;
+    border-collapse:collapse;
+    width: 400px;
+    padding: 8px 0px 8px 8px;
+}
+
+
+
+.contact-douki {
+    display: block;
+    font-size: 1.4rem;
+    padding: 8px 0px 8px 8px;
+}
+
+.contact-douki + .contact-skill {
+    margin-top: 10px;
+}
+
+.contact-douki-txt {
+    margin-left: 5px;
+}
+
+.form-name{
+    width: 328px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+}
+.form-detail{
+    width: 328px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    max-width: 400px;
+    
+}
+
+
+.btn-submit{
+    appearance:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+}
+.site-construct-news ul :hover{
+        background: #fff;
+        color: #f4b364;
+}
+.btn{
+    display: block;
+    width: 300px;
+    height: 60px;
+
+    margin: auto;
+    padding: 21px 0;
+    background-color: #ffd61a;
+    color:#fff;
+    font-size:1.8rem;
+
+}
+.btn:hover {
+    background: #fff;
+    color: #f4b364;
+  }
+/* ---header--- */
+.footer{
+    padding: 24px 0;
+    background-color: #707070;
+    text-align:center ;
+}
+.copyrights{
+    color: #fff;
+    margin: 30px 0 30px 0;
+    font-size: 1.6rem;
+
+}
+/* 
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+} */
