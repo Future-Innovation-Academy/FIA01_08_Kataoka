@@ -1,0 +1,174 @@
+.App {
+  text-align: center;
+}
+.top-icon{
+  width:auto;
+  height:auto;
+}
+.top-img {
+  position: relative;/*相対配置*/
+  }
+  .top-img img{
+    width: 1200px;
+  }
+  .top-img p {
+    font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+    font: bold;
+    position: absolute;/*絶対配置*/
+    color: #fff;/*文字は白に*/
+    top:14%;
+    right:25%;
+    font-size: 50px;
+    }  
+.search{
+    position: absolute;/*絶対配置*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top : 80%;
+    right:40%;
+  }
+.search__bar{
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding: 10px;
+
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  background-color: #f0f2f5;
+}
+.search__bar > input {
+  border: none !important;
+  background-color: #f0f2f5;
+  width: 400px;
+
+}
+.search__bar > input:focus {
+  outline-width: 0;
+}
+
+.top-search{
+  position: absolute;/*絶対配置*/
+  top : 70%;
+  right : 60%;
+}
+
+.nav-list{
+  /* ヘッダの目次を横並びにする */
+  display: flex;
+  list-style: none;
+  justify-content:right;
+}
+.nav-item{
+  /* ヘッダの目次間を50pxに保つ */
+  margin: 0 0 0 50px;
+}
+.nav-item>a{
+  /* ヘッダの目次の文字の色の定義 */
+  color: #333333;
+}
+.router {
+  text-align: center;
+  width: 100%;
+  height:auto;
+  font-size: 16px;
+  margin: auto;
+}
+.content{
+  z-index:2;
+  width:50%;
+  height:50%;
+  padding: 1em;
+  background:#f1f1f1;
+
+  border: 1px  solid lightgray;
+  border-radius: 20px;
+
+}
+.contentp{
+  text-align: center;
+  font-size: 16px;
+}
+
+.overlay{
+  /*　画面全体を覆う設定　*/
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+  
+    /*　画面の中央に要素を表示させる設定　*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+.close-modal{
+  width:100%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+
+}
+.close-btn-modal{
+  background:#f1f1f1;
+  border: none;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.modal-select-pref{
+  width: 100px;
+}
+.btn-search-modal{
+  display: flex;
+  justify-content: center;
+  padding: 200px;
+}
+.search-bg{
+  background-color:#f7f5f5;
+  width:auto;
+}
+.search-ul{
+  height:90%;
+  width:45%;
+  padding : 20px 0% 20px 43%;
+  text-align: center;
+  align-items: center;
+}
+.tr-style{
+  height:100%;  
+}
+.record{
+
+  list-style:none;
+  height:150px;
+  padding: 10px 10px 10px 10px;
+  outline: 1px solid #b4b3b3 ;
+  outline-offset: -10px ;
+
+
+
+}
+.photo-part{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding:auto;
+  width : 200px;
+  height:150px;
+  background-color: #ffffff;
+}
+.shoukai-part{
+  padding:auto;
+  width : 643px;
+  height:150px;
+  background-color: #ffffff;
+  text-align: left;
+  vertical-align: top;
+
+}
