@@ -23,3 +23,4 @@
 ## ④質問・疑問・感想、シェアしたいこと等なんでも
 - NodeJsでサーバー側を構築する方は、結構Stripeは直感的にわかりやすく決済処理を使えます。非常におすすめです。
 - でもレイアウトがいまいちなので、そこは工夫してあげる必要あるかもです。
+[【エビデンス】05_api_0724.xlsx](https://github.com/Future-Innovation-Academy/FIA01_08_Kataoka/files/9225353/05_api_0724.xlsx)
