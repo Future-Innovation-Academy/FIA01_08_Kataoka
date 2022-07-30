@@ -1,0 +1,325 @@
+.App {
+  text-align: center;
+}
+.top-icon{
+  width:auto;
+  height:auto;
+}
+.top-img {
+  position: relative;/*相対配置*/
+  }
+  .top-img img{
+    width: 1200px;
+  }
+  .top-img p {
+    font-family:  "ヒラギノ角ゴ ProN W3", HiraKakuProN-W3, 游ゴシック, "Yu Gothic", メイリオ, Meiryo, Verdana, Helvetica, Arial, sans-serif;
+    font: bold;
+    position: absolute;/*絶対配置*/
+    color: #fff;/*文字は白に*/
+    top:14%;
+    right:25%;
+    font-size: 50px;
+    }  
+.search{
+    position: absolute;/*絶対配置*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top : 80%;
+    right:40%;
+  }
+.search__bar{
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding: 10px;
+
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  background-color: #f0f2f5;
+}
+.search__bar > input {
+  border: none !important;
+  background-color: #f0f2f5;
+  width: 400px;
+
+}
+.search__bar > input:focus {
+  outline-width: 0;
+}
+
+.top-search{
+  position: absolute;/*絶対配置*/
+  top : 70%;
+  right : 60%;
+}
+
+.nav-list{
+  /* ヘッダの目次を横並びにする */
+  width:80%;
+  display: flex;
+  list-style: none;
+  justify-content:right;
+}
+.nav-item{
+  /* ヘッダの目次間を50pxに保つ */
+  margin: 0 0 0 50px;
+}
+.nav-item>a{
+  /* ヘッダの目次の文字の色の定義 */
+  color: #333333;
+}
+.router {
+  text-align: center;
+  width: 100%;
+  height:auto;
+  font-size: 16px;
+  margin: auto;
+}
+.content{
+  z-index:2;
+  width:50%;
+  height:50%;
+  padding: 1em;
+  background:#f1f1f1;
+
+  border: 1px  solid lightgray;
+  border-radius: 20px;
+
+}
+.contentp{
+  text-align: center;
+  font-size: 16px;
+}
+.content-login{
+  z-index:2;
+  width:20%;
+  height:50%;
+  padding: 1em;
+  background:#f1f1f1;
+
+  border: 1px  solid lightgray;
+  border-radius: 20px;
+
+}
+
+.overlay{
+  /*　画面全体を覆う設定　*/
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.5);
+  
+    /*　画面の中央に要素を表示させる設定　*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+.close-modal{
+  width:100%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+
+}
+.close-btn-modal{
+  background:#f1f1f1;
+  border: none;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.54);
+}
+.modal-select-pref{
+  width: 100px;
+}
+.btn-search-modal{
+  padding: 100px 0px 0px 0px;
+}
+.search-bg{
+  background-color:#f7f5f5;
+  width:auto;
+}
+.search-ul{
+  height:100%;
+  width:45%;
+  padding : 0px 0% 0px 0px;
+  text-align: center;
+  align-items: center;
+}
+.tr-style{
+  height:100%;  
+}
+.login-inputs{
+
+  width :auto;
+  height:auto;
+  text-align: center;
+  align-items: center;
+}
+.login-input{
+
+  padding:20px 0px 0px 0px;
+  width:100%;
+
+}
+.text-login-er{
+  width:80%;
+}
+.record{
+  list-style:none;
+  height:150px;
+  padding: 10px 10px 10px 10px;
+  outline: 1px solid #b4b3b3 ;
+  outline-offset: -10px ;
+}
+.photo-part{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width : 200px;
+  height:150px;
+  background-color: #ffffff;
+}
+.photo-part img{
+
+border-radius: 50%;
+width: 120px;
+height: 120px;
+object-fit: cover; 
+padding:auto;
+}
+
+
+.shoukai-part{
+  padding:10px 0px 0px 0px;
+  width : 643px;
+  background-color: #ffffff;
+  text-align: left;
+  vertical-align: top;
+
+}
+.text-for-tork{
+  padding: 20px 0px 0px 0px;
+
+}
+.mypage-er-img img{
+  width:1200px;
+  height:500px;
+  object-fit: cover; 
+  position: relative;/*相対配置*/
+
+}
+.mypage-er-smr{
+  position: absolute;/*絶対配置*/
+  background-color: #f7f5f5;
+  width:500px;
+  height:380px;
+  top:90px;
+  left:700px;
+  border: 1px  solid lightgray;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.mypage-er-edit-btn{
+  vertical-align: top;
+  height:382px;
+  padding:0px 0px 0px 0px;
+  font-size: 20px;
+}
+.img-profile-ee img{
+  padding:0px 0px 0px 0px;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover; 
+
+}
+
+/* マイページ（トレーナー用）ヘッダーのリスト */
+.mypage-er-list{
+    /* ヘッダの目次を横並びにする */
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+.mypage-er-list li{
+  /* ヘッダの目次を横並びにする */
+  margin: 10px 150px 10px 0px;
+}
+.mypage-er-list li a{
+  /* ヘッダの目次を横並びにする */
+  color: gray;
+  font-size: 1.0rem;
+
+}
+
+/* マイページ（トレーナー用）ヘッダーより下部分 */
+.mypage-er-underPart{
+  border-top: 1px  solid lightgray;
+  background-color: #f7f5f5;
+  height:500px;
+}
+.mypage-er-menu-list{
+  list-style: none;
+}
+
+/* 検索画面 */
+.search-headders{
+  width:100%;
+  display: flex;
+  list-style: none;
+  justify-content:center;
+  vertical-align: center;
+  padding: 30px 0px 30px 0px;
+  align-items: center;
+  border-bottom: 1px  solid lightgray;
+}
+.search-headder{
+  padding: 0px 800px 0px 0px;
+}
+.search-shiborikomi-joken{
+  width:150px;
+  height:40px;
+}
+.search-result-part{
+  display: flex;
+  list-style: none;
+  justify-content:center;
+  padding:30px 0px 0px 0px;
+}
+.search-joken-panel{
+  height : 500px;
+  width: 300px;
+  padding:0px 130px 0px 100px;
+
+}
+.search-joken-item-area{
+  padding:30px 0px 0px 0px;
+  border-bottom: 1px  solid lightgray;
+  border-top: 1px  solid lightgray;
+  border-right: 1px  solid lightgray;
+  border-left: 1px  solid lightgray;
+
+}
+.search-joken-item-menu{
+  padding:30px 0px 0px 0px;
+  border-bottom: 1px  solid lightgray;
+  border-right: 1px  solid lightgray;
+  border-left: 1px  solid lightgray;
+}
+.search-joken-item-kodawari{
+  padding:30px 0px 0px 0px;
+  border-bottom: 1px  solid lightgray;
+  border-right: 1px  solid lightgray;
+  border-left: 1px  solid lightgray;
+}
